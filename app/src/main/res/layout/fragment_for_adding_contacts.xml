@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_secondary"
+    tools:context=".FragmentForAddingContacts">
+
+    <EditText
+        android:id="@+id/etNewContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:autofillHints="name"
+        android:gravity="start"
+        android:hint="@string/InputName"
+        android:inputType="textPersonName"
+        android:textSize="32sp"
+        tools:text="New Contact Name" />
+
+    <EditText
+        android:id="@+id/etNewContactSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNewContactName"
+        android:autofillHints="name"
+        android:gravity="start"
+        android:hint="@string/InputSurname"
+        android:inputType="textPersonName"
+        android:textSize="32sp"
+        tools:text="New contact Surname" />
+
+    <EditText
+        android:hint="@string/InputPhoneNubmer"
+        android:id="@+id/etNewContactPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNewContactSurname"
+        android:autofillHints="phone"
+        android:gravity="start"
+        android:inputType="phone"
+        android:textSize="32sp"
+        tools:text="89223345686" />
+
+    <Button
+        android:id="@+id/btnAddInFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_alignEnd="@id/etNewContactPhoneNumber"
+        android:layout_below="@id/etNewContactPhoneNumber"
+        android:text="@string/justAdd"/>
+
+</RelativeLayout>
